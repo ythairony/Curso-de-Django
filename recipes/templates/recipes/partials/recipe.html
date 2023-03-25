@@ -13,7 +13,7 @@
         </span>
         <span class="recipe-author-item">
             <i class="fas fa-calendar-alt"></i>
-            {{ recipe.created_at /date: "d/m/Y" }} às {{ recipe.created_at /date: "H:i" }}
+            {{ recipe.created_at|date:"d/m/Y" }} às {{ recipe.created_at|date:"H:i" }}
         </span>
         <span class="recipe-author-item">
             <a href="#">
@@ -33,7 +33,7 @@
                  Preparo
             </h3>
             <div class="recipe-meta-text">
-                {{ recipe.preparation_time }} {{ recipe.preparation_time_units }}
+                {{ recipe.preparation_time }} {{ recipe.preparation_time_unit }}
             </div>
         </div>
         <div class="recipe-meta recipe-servings">
@@ -42,7 +42,7 @@
                  Porções
             </h3>
             <div class="recipe-meta-text">
-                {{ recipe.servings }} {{ recipe.servings_units}}
+                {{ recipe.servings }} {{ recipe.servings_unit }}
             </div>
         </div>
     </div>
